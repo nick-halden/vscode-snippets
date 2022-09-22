@@ -1,0 +1,74 @@
+{
+	"Argparse Argument": {
+		"prefix": ["argpa", "argparsearg"],
+		"body": [
+			"p.add_argument('--${1:argname}', required=${2:False}, type=${3:str}, default=${4:None}, help='${5:help}')"
+		],
+		"description": "Add argument for parsing arguments."
+	},
+	"Argparse Block": {
+		"prefix": ["argp", "argparse"],
+		"body": [
+			"import argparse",
+			"p = argparse.ArgumentParser('${1:description}')",
+			"p.add_argument('--${2:argname}', required=${3:False}, type=${4:str}, help='${5:help}')",
+			"args = p.parse_args()",
+			"$0"
+		],
+		"description": "Building block for parsing 1 or more arguments."
+	},
+	"Argparse Block 2": {
+		"prefix": ["argp2", "argparse2"],
+		"body": [
+			"import argparse",
+			"p = argparse.ArgumentParser('${1:description}')",
+			"p.add_argument('--${2:argname}', required=${3:False}, type=${4:str}, help='${5:help}')",
+			"p.add_argument('--${6:argname}', required=${7:False}, type=${8:str}, help='${9:help}')",
+			"args = p.parse_args()",
+			"$0"
+		],
+		"description": "Building block for parsing 2 or more arguments."
+	},
+	"Argparse Block 3": {
+		"prefix": ["argp3", "argparse3"],
+		"body": [
+			"import argparse",
+			"p = argparse.ArgumentParser('${1:description}')",
+			"p.add_argument('--${2:argname}', required=${3:False}, type=${4:str}, help='${5:help}')",
+			"p.add_argument('--${6:argname}', required=${7:False}, type=${8:str}, help='${9:help}')",
+			"p.add_argument('--${10:argname}', required=${11:False}, type=${12:str}, help='${13:help}')",
+			"args = p.parse_args()",
+			"$0"
+		],
+		"description": "Building block for parsing 3 or more arguments."
+	},
+	"Argparse Block 4": {
+		"prefix": ["argp4", "argparse4"],
+		"body": [
+			"import argparse",
+			"p = argparse.ArgumentParser('${1:description}')",
+			"p.add_argument('--${2:argname}', required=${3:False}, type=${4:str}, help='${5:help}')",
+			"p.add_argument('--${6:argname}', required=${7:False}, type=${8:str}, help='${9:help}')",
+			"p.add_argument('--${10:argname}', required=${11:False}, type=${12:str}, help='${13:help}')",
+			"p.add_argument('--${14:argname}', required=${15:False}, type=${16:str}, help='${17:help}')",
+			"args = p.parse_args()",
+			"$0"
+		],
+		"description": "Building block for parsing 4 or more arguments."
+	},
+	"Argparse Block 5": {
+		"prefix": ["argp5", "argparse5"],
+		"body": [
+			"import argparse",
+			"p = argparse.ArgumentParser('${1:description}')",
+			"p.add_argument('--${2:argname}', required=${3:False}, type=${4:str}, help='${5:help}')",
+			"p.add_argument('--${6:argname}', required=${7:False}, type=${8:str}, help='${9:help}')",
+			"p.add_argument('--${10:argname}', required=${11:False}, type=${12:str}, help='${13:help}')",
+			"p.add_argument('--${14:argname}', required=${15:False}, type=${16:str}, help='${17:help}')",
+			"p.add_argument('--${18:argname}', required=${19:False}, type=${20:str}, help='${21:help}')",
+			"args = p.parse_args()",
+			"$0"
+		],
+		"description": "Building block for parsing 5 or more arguments."
+	}
+}
